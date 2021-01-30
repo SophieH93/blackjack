@@ -172,7 +172,7 @@ function showResult(winner) {
         } else {
             document.querySelector('#draws').textContent = blackjackGame['draws'];
             message = 'You drew!';
-            messageColor = 'black';
+            messageColor = 'orange';
         }
 
         document.querySelector('#Blackjack-result').textContent = message;
