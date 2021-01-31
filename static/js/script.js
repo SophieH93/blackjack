@@ -81,7 +81,9 @@ function blackjackDeal() {
 }
 
 function updateScore(card, activePlayer) {
-    
+    /**
+     * Shows score for 'ace' card, can be 1 or 11
+     */
     if(card === 'A') {        
         if(activePlayer['score'] + blackjackGame['cardsMap'][card][1] <= 21) {
             activePlayer['score'] += blackjackGame['cardsMap'][card][1];
@@ -94,7 +96,9 @@ function updateScore(card, activePlayer) {
 }
 
 function showScore(activePlayer) {
-    
+    /**
+     * Shows the players score
+     */
     if(activePlayer['score'] > 21) {
         document.querySelector(activePlayer['scoreSpan']).textContent = "BUST!";
         document.querySelector(activePlayer['scoreSpan']).style.color = "red";
@@ -110,10 +114,8 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function dealerLogic() {
-    
+async function dealerLogic() {    
     blackjackGame['isStand'] = true;
-
     while(DEALER['score'] < 16 && blackjackGame['isStand'] === true) {        
         let card = randomCard();
         showCard(card, DEALER);
@@ -128,7 +130,7 @@ async function dealerLogic() {
 
 function computeWinner() {    
     /**
-     * updated the wins, losses, and draws
+     * updates the wins, losses, and draws
      */
     let winner;
 
@@ -153,7 +155,7 @@ function computeWinner() {
 
 function showResult(winner) {
     /**
-     * Shows the results for wins, losses and drawn with sounds
+     * Shows the results for wins, losses and draws and included the sound effects
      */
     let message, messageColor;
 
