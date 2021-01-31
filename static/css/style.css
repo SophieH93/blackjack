@@ -55,11 +55,8 @@ h3 {
     padding: 10px;
     align-items: center;
 }
-
-/* .flex-blackjack-row-2 button {
-    border: 1px solid black;
-    padding: 10px;
-} */
+/* 
+ */
 
 /* .flex-blackjack-row-2 div {
     border: 1px solid black;
@@ -73,6 +70,74 @@ table, th, td {
 
 th {
     color: #c6f3c6;
+}
+
+
+/* @media only screen and (max-width: 480px) {  
+    
+    .container {
+        width: 100%;
+    }
+
+    .flex-blackjack-row-1 img {
+        height: 30%;
+    }
+
+} */
+
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .container {
+        width: 100%;        
+    }
+
+    .flex-blackjack-row-1 img {
+        height: 35%;
+    }
+
+    .flex-blackjack-row-3 {
+        padding-top: 2rem;
+        font-size: 1.3rem;
+    }
+}
+
+/* ipad Pro */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+
+    #gameTitle {
+        font-size: 3rem;
+    }
+
+    #Blackjack-result {
+        font-size: 2.3rem;
+    }
+
+    #your-box h2, #dealer-box h2 {
+        font-size: 2.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .flex-blackjack-row-1 div  {
+        border: none;
+    }
+   
+    .flex-blackjack-row-1   {
+        height: 40vh;
+    }
+
+    .flex-blackjack-row-1 img {
+        height: 55%;
+    }
+
+    .flex-blackjack-row-2 button {
+        font-size: 2rem;
+    }
+
+    .flex-blackjack-row-3 {
+        font-size: 2rem;
+    }
+
 }
 
 
