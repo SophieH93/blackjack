@@ -72,18 +72,57 @@ th {
     color: #c6f3c6;
 }
 
+/* Galaxy 5*/
 
-/* @media only screen and (max-width: 480px) {  
-    
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+
+    #gameTitle,  #Blackjack-result {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    h3 {
+        margin-bottom: 5px;    
+    }
+
+    .flex-blackjack-row-1 img {
+        height: 24%;
+    }
+
+    #your-box h2, #dealer-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .flex-blackjack-row-2 button{
+        font-size: 1rem;
+    }
+
+    table, th, td {
+        padding: 5px;
+        border: 1px solid white;
+    }
+}
+
+
+/* iphone X */
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
     .container {
         width: 100%;
     }
 
     .flex-blackjack-row-1 img {
-        height: 30%;
+        height: 25%;
     }
 
-} */
+    #your-box h2, #dealer-box h2 {
+        font-size: 1.5rem;
+    }
+}
+
 
 /* ipad */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
